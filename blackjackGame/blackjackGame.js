@@ -25,6 +25,3 @@ if (sum <= 20) {
 // 3. Log it out
 
 console.log(message);
-
-// Another test
-//Yet another tes line
