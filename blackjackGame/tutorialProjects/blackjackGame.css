@@ -1,0 +1,33 @@
+body {
+  background-image: url(https://us.123rf.com/450wm/faizalramli/faizalramli2004/faizalramli200400048/faizalramli200400048.jpg?ver=6);
+}
+
+h1 {
+  font-family: Arial;
+  color: goldenrod;
+  margin: auto;
+  text-align: center;
+}
+
+p {
+  font-family: Arial;
+  font-weight: bold;
+  color: white;
+  margin: 20px;
+  text-align: center;
+}
+
+#message-el {
+  font-style: italic;
+}
+
+/*
+3. Style the button according to the provided design
+text color - #016f32
+width -150px
+background - goldenrod
+*/
+
+button {
+
+}

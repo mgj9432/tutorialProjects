@@ -1,0 +1,36 @@
+body {
+  background: lightgreen;
+}
+
+h1 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 30px;
+  font-weight: bold;
+  color: dargrey;
+}
+
+h2 {
+  text-align: center;
+  font-family: Arial;
+  font-size: 40px;
+  color: darkgreen;
+}
+
+p {
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  color: blue;
+  font-weight: bold;
+  padding: 10px;
+}
