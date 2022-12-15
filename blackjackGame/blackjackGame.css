@@ -1,5 +1,7 @@
 body {
   background-image: url(https://us.123rf.com/450wm/faizalramli/faizalramli2004/faizalramli200400048/faizalramli200400048.jpg?ver=6);
+  bacground-size: cover;
+  text-align: center;
 }
 
 h1 {
