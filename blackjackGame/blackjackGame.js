@@ -1,6 +1,7 @@
-let firstCard = 3;
+let firstCard = 10;
 let secondCard = 11;
 
+// 1. Create a new array - cards - that contain firstCard and secondCard
 let cards = [firstCard, secondCard];
 
 let sum = firstCard + secondCard;
@@ -17,6 +18,12 @@ let sumEl = document.getElementById("sum-el");
 
 let cardsEl = document.getElementById("cards-el");
 
+
+// Create a function, getRandomCard(), that always returns the number 5
+function getRandomCard() {
+  return 5;
+}
+
 // let sumEl = document.getElementById("sum-el") can be written
 // as follows:
 // let sumEl = document.querySelector("#sum-el")
@@ -26,7 +33,11 @@ function startGame() {
 }
 
 function renderGame() {
-  cardsEl.textContent = "Cards: " + cards[0] + " " + cards[1];
+  cardsEl.textContent = "Cards: ";
+  for (i = 0; i < cards.length; i++) {
+    cardsEl.textContent += cards[i] + " ";
+  }
+  
   sumEl.textContent = "Sum: " + sum;
   if (sum <= 20) {
     message = "Do you want to draw a new card?";
@@ -43,9 +54,11 @@ function renderGame() {
 
 
 function newCard() {
-  let card = 5;
+  let card = 6;
   
   sum += card;
   
+  cards.push(card)
+
   renderGame();
 }
