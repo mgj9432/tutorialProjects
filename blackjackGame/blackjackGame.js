@@ -1,8 +1,6 @@
-// 2. Use the getRandomCard() to set the value of the firstCard and secondCard
 let firstCard = getRandomCard();
 let secondCard = getRandomCard();
 
-// 1. Create a new array - cards - that contain firstCard and secondCard
 let cards = [firstCard, secondCard];
 
 let sum = firstCard + secondCard;
@@ -20,7 +18,6 @@ let sumEl = document.getElementById("sum-el");
 let cardsEl = document.getElementById("cards-el");
 
 
-// Create a function, getRandomCard(), that always returns the number 5
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
 
@@ -31,9 +28,6 @@ function getRandomCard() {
   } else {
     return randomNumber;
   }
-  // if 1 -> return 11
-  // if 11-13-> return 10
-  return Math.floor(Math.random() * 13) + 1;
 }
 
 // let sumEl = document.getElementById("sum-el") can be written
@@ -66,7 +60,6 @@ function renderGame() {
 
 
 function newCard() {
-  // 3. Use the getRandomCard() to set the value of card
   let card = getRandomCard();
 
   sum += card;
