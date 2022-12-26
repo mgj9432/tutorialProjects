@@ -1,13 +1,12 @@
-let firstCard = getRandomCard();
-let secondCard = getRandomCard();
 
-let cards = [firstCard, secondCard];
 
-let sum = firstCard + secondCard;
+let cards = [];
+
+let sum = 0;
 
 let hasBlackJack = false;
 
-let isAlive = true;
+let isAlive = false;
 
 let message = "";
 
@@ -35,6 +34,12 @@ function getRandomCard() {
 // let sumEl = document.querySelector("#sum-el")
 
 function startGame() {
+  isAlive = true;
+  let firstCard = getRandomCard();
+  let secondCard = getRandomCard();
+  cards = [firstCard, secondCard];
+  sum = firstCard + secondCard;
+
   renderGame();
 }
 
