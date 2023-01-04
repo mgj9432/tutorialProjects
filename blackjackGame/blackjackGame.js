@@ -14,6 +14,12 @@ let sumEl = document.getElementById("sum-el");
 
 let cardsEl = document.getElementById("cards-el");
 
+let playerName = "Player";
+// Maybe change playerName to a prompt input?
+let playerChips = 145;
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = playerName + ": $" + playerChips;
 
 function getRandomCard() {
   let randomNumber = Math.floor(Math.random() * 13) + 1;
