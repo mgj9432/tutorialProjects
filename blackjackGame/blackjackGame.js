@@ -4,6 +4,8 @@ let player = {
   chips: 150
 }
 
+player.sayHello();
+
 let cards = [];
 
 let sum = 0;
